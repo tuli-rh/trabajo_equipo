@@ -15,16 +15,13 @@ function verificarNumero() {
     const container = document.getElementById("resultado-container1");
     const result1 = document.getElementById("result1");
     const input = document.getElementById("input1");
+    let valor = input.value;
 
-    const valor = Number(input.value); 
-
-
-    if (valor === "" ) {
+    if (valor === "") {
         result1.textContent = "Debes ingresar un número";
-    } else{
+    } else {
         result1.textContent = "Número ingresado correctamente";
     }
-    
     container.classList.remove("d-none");
     input.value = "";
 }
@@ -46,9 +43,14 @@ Mostrar en pantalla:
 "Sobresaliente" si es 6.0 o más}
 */
 
-function evaluarNota(){
-    const input = document.getElementById()
+function evaluarNota() {
+    const container = document.getElementById("resultado-container2");
+    const result2 = document.getElementById("result2");
+    const input = document.getElementById("input2");
+    
+
 }
+
 
 /*Ejercicio 3: Uso de múltiples funciones (flujo completo)
 Objetivo: Integrar varias funciones con roles distintos.
@@ -69,3 +71,61 @@ Llame a ambas funciones
 Muestre en pantalla:
 Cuadrado: X
 Triple: Y*/
+
+function calcularCuadrado(numero) {
+    return numero * numero;
+}
+
+function calcularTriple(numero) {
+    return numero * 3;
+}
+
+function procesarNumero() {
+    const container = document.getElementById("resultado-container4");
+    const result = document.getElementById("result4");
+    const input = document.getElementById("input4");
+    let numero = input.value;
+    
+}
+
+
+
+/* Ejercicio 4: Función que transforma texto
+Objetivo: Manipular strings desde un input.
+
+Instrucciones:
+
+Crea un input para ingresar un texto.
+Crea una función transformarTexto.
+La función debe:
+Capturar el texto
+Convertirlo a mayúsculas (toUpperCase())
+Mostrar el resultado en un <div>
+
+Ejemplo esperado:
+
+Entrada: hola mundo
+Salida: HOLA MUNDO
+*/
+
+function transformarTexto() {
+
+}
+
+
+
+
+/* maybe this: 
+
+        function transformarTexto() {
+            // 1. Capturamos el texto
+            const input = document.getElementById("textoInput");
+            const textoOriginal = input.value;
+
+            // 2. Lo convertimos (toUpperCase no cambia el original, crea uno nuevo)
+            const textoMayusculas = textoOriginal.toUpperCase();
+
+            // 3. Lo mostramos en el div
+            document.getElementById("contenedorTexto").innerText = textoMayusculas;
+        }
+*/
