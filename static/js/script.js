@@ -10,21 +10,30 @@ Verificar si está vacío
 Si está vacío → mostrar: "Debes ingresar un número"
 Si tiene valor → mostrar: "Número ingresado correctamente"
 */
+function verificar(valor) {
+    if (valor == "" || isNaN(valor)) {
+        return "Debes ingresar un número";
+    } else {
+        return "Número ingresado correctamente";
+    }
+}
 
 function verificarNumero() {
     const container = document.getElementById("resultado-container1");
     const result1 = document.getElementById("result1");
     const input = document.getElementById("input1");
-    let valor = input.value;
+    let valor = parseInt(input.value);
+    let validacion = verificar(valor)
 
-    if (valor === "") {
-        result1.textContent = "Debes ingresar un número";
-    } else {
-        result1.textContent = "Número ingresado correctamente";
-    }
+    result1.textContent = validacion;
     container.classList.remove("d-none");
     input.value = "";
 }
+
+
+
+
+
 
 
 
@@ -42,6 +51,8 @@ Mostrar en pantalla:
 "Aprobado" si está entre 4.0 y 5.9
 "Sobresaliente" si es 6.0 o más}
 */
+
+
 
 function evaluarNota() {
     const container = document.getElementById("resultado-container2");
@@ -79,13 +90,14 @@ function calcularCuadrado(numero) {
 function calcularTriple(numero) {
     return numero * 3;
 }
-
+/*
 function procesarNumero() {
     const container = document.getElementById("resultado-container4");
     const result = document.getElementById("result4");
     const input = document.getElementById("input4");
     let numero = input.value;
-    
+    let result 
+    0
 }
 
 
