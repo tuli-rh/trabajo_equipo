@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Trabajo grupal</title>
+</head>
+
+<body>
+    <main class="contenedor p-3 d-flex flex-wrap gap-3">
+
+        <!-- Eercicio 1 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 1</h5>
+                <p class="card-text">Función con validación de datos</p>
+                <input type="text" class="form-control mb-3" id="input1" placeholder="Ingresar un n°">
+                <a href="#" class="btn btn-primary" onclick="verificarNumero()">Ejecutar</a>
+                <div id="resultado-container1" class="mt-4 d-none">
+                    <h6>Resultado: </h6>
+                    <div id="result1" class="alert alert-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eercicio 2 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 2</h5>
+                <p class="card-text">Función que usa condicional múltiple</p>
+                <input type="text" class="form-control mb-3" id="input2" placeholder="Ingresa tu nota:">
+                <a href="#" class="btn btn-primary" onclick="evaluarNota()">Ejecutar</a>
+                <div id="resultado-container2" class="mt-4 d-none">
+                    <h6>Resultado: </h6>
+                    <div id="result2" class="alert alert-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eercicio 3 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 3</h5>
+                <p class="card-text"> Uso de múltiples funciones (flujo completo)</p>
+                <input type="text" class="form-control mb-3" id="input3" placeholder="Ingresa tu nota:">
+                <a href="#" class="btn btn-primary" onclick="a()">Ejecutar</a>
+                <div id="resultado-container3" class="mt-4 d-none">
+                    <h6>Resultado: </h6>
+                    <div id="result3" class="alert alert-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eercicio 4 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 4</h5>
+                <p class="card-text"> Función que transforma texto</p>
+                <input type="text" class="form-control mb-3" id="input4" placeholder="Ingresa tu nota:">
+                <a href="#" class="btn btn-primary" onclick="g()">Ejecutar</a>
+                <div id="resultado-container4" class="mt-4 d-none">
+                    <h6>Resultado: </h6>
+                    <div id="result4" class="alert alert-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
